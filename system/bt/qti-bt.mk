@@ -27,5 +27,9 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.bluetooth.library_name=libbluetooth_qti.so
 endif
 
+# Hearing Aid Audio Support Using Bluetooth LE
+PRODUCT_PRODUCT_PROPERTIES += \
+    bluetooth.profile.asha.central=true
+
 # Get non-open-source specific aspects.
 $(call inherit-product-if-exists, vendor/qcom/common/system/bt/bt-vendor.mk)
