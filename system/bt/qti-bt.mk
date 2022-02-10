@@ -29,7 +29,7 @@ endif
 
 # Hearing Aid Audio Support Using Bluetooth LE
 PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.profile.asha.central=true
+    bluetooth.profile.asha.central.enabled=true
 
 # Get non-open-source specific aspects.
 $(call inherit-product-if-exists, vendor/qcom/common/system/bt/bt-vendor.mk)
